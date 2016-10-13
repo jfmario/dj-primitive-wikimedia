@@ -4,11 +4,15 @@
     {% include 'primitive_wikimedia/nav.html' %}
 
     <div class="container">
-        
+
         <h1>Primitive Wikimedia</h1>
-        
+
         <p class="lead">
             Wikimedia Commons daily images modified with PrimitivePic.
         </p>
+
+        {% for entry in entries %}
+            {% include "primitive_wikimedia/entry.html" with entry=entry %}
+        {% endfor %}
     </div>
 {% endblock %}

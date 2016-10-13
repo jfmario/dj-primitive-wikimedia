@@ -16,3 +16,6 @@ class PrimitiveWikimediaEntry ( models.Model ):
 
     def __str__ ( self ):
         return "[%s] Primitive Wikimedia Entry from %s" % ( self.creation_date.strftime ( '%Y%m%d' ), self.orig_url )
+
+    def title ( self ):
+        return self.creation_date.strftime ( "%B %-d, %Y" )

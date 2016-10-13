@@ -1,0 +1,49 @@
+
+<h3>{{ entry.title }}</h3>
+
+<div class="card-group">
+    <div class="card">
+
+        <img class="card-img-top" src="{{ entry.orig_url }}">
+
+        <div class="card-block">
+
+            <h4 class="card-title">Original Image</h4>
+
+            <p class="card-text">Daily Image from <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>.</p>
+        </div>
+    </div>
+    <div class="card">
+
+        <img class="card-img-top" src="{{ entry.url1 }}">
+
+        <div class="card-block">
+
+            <h4 class="card-title">Alternate 1</h4>
+
+            <p class="card-text">50 Iterations in Combo Mode</p>
+        </div>
+    </div>
+    <div class="card">
+
+        <img class="card-img-top" src="{{ entry.url2 }}">
+
+        <div class="card-block">
+
+            <h4 class="card-title">Alternate 2</h4>
+
+            <p class="card-text">800 Iterations in Triangle Mode</p>
+        </div>
+    </div>
+    <div class="card">
+
+        <img class="card-img-top" src="{{ entry.url3 }}">
+
+        <div class="card-block">
+
+            <h4 class="card-title">Alternate 3</h4>
+
+            <p class="card-text">1600 Iterations in Ellipse Mode</p>
+        </div>
+    </div>
+</div>
