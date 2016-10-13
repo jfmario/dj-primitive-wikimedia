@@ -15,4 +15,4 @@ class PrimitiveWikimediaEntry ( models.Model ):
         verbose_name_plural = "Primitive Wikimedia Entries"
 
     def __str__ ( self ):
-        return self.creation_date.strftime ( "%B %-d, %Y" )
+        return "[%s] Primitive Wikimedia Entry from %s" % ( self.creation_date.strftime ( '%Y%m%d' ), self.orig_url )
