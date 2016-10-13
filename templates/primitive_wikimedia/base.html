@@ -14,5 +14,19 @@
         {% for entry in entries %}
             {% include "primitive_wikimedia/entry.html" with entry=entry %}
         {% endfor %}
+
+        <br />
+        <div class="card-group">
+            {% if next_page_link %}
+                <div class="card  card-block">
+                    <a class="btn btn-info" href="{{ next_page_link }}">Older</a>
+                </div>
+            {% endif %}
+            {% if previous_page_link %}
+                <div class="card  card-block">
+                    <a class="btn btn-info" href="{{ previous_page_link }}">Newer</a>
+                </div>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
