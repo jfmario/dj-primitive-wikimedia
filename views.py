@@ -3,7 +3,7 @@ from django.core.paginator import EmptyPage, Paginator
 from django.template.response import TemplateResponse
 from primitive_wikimedia.models import PrimitiveWikimediaEntry
 
-def main ( request, page_number='1' ):
+def main_view ( request, page_number='1' ):
 
     data = {}
 
