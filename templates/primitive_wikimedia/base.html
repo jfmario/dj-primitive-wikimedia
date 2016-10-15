@@ -12,6 +12,9 @@
         </p>
 
         {% for entry in entries %}
+
+            <br />
+
             {% include "primitive_wikimedia/entry.html" with entry=entry %}
         {% endfor %}
 
